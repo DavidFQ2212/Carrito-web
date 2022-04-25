@@ -1,0 +1,70 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+#root{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    justify-content: space-evenly;
+}
+#root .control-buttons-container {
+    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    width: 300px;
+    height: 300px;
+}
+
+#root .control-buttons-container div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#root .control-buttons-container .arrow {
+    border: 1px solid #ccc;
+    background-color: lightskyblue;
+    border-radius: 50%;
+    transition: transform 200ms ease;
+    height: 75px;
+    width: 75px;
+    box-shadow: 2px 1px 2px #ccc;
+}
+#root .control-buttons-container .arrow:active {
+    transform: scale(.7);
+}
+
+#root .light-button {
+    border-radius: 50px;
+    padding: 10px;
+    margin: 0px 20px;
+    transition: transform 200ms ease;
+}
+
+#root .light-button:active {
+    transform: scale(.8);
+}
+
+.buttons {
+    background-color: lightblue;
+    margin: 20px 0px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 2px 1px 2px #ccc;
+}
+.stop {
+    box-shadow: 2px 1px 2px #ccc;
+    background-color: lightcoral;
+    border-radius: 50%;
+    margin : auto;  
+    padding: 10px;
+    transition: transform 200ms linear;
+    display: block;
+}
+
+.stop:active {
+    transform: scale(.7);
+}
